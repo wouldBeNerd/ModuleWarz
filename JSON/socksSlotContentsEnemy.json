@@ -1,0 +1,103 @@
+'use strict'
+//EQUIPED ITEMS GO HERE GO HERE
+module.exports = [
+{//1
+"prefixID":"enSock01", //NEED THIS FOR ALL HTML OR CSS LINKS
+"eqptModulesID":1, //CURRENTLY UNUSED 
+"playerinventoryID":1, //CURRENTLY UNUSED 
+"selected":false, //TOGGLES TO TRUE WHEN SELECTED
+"item":{}, //EQUIPED ITEMS ARE STORED IN HERE
+"CDEnd":0, //USED TO ANIMATE PROGRESS BARS
+"CDTemp":0, //CD CORRECTED BY TEMPERATURE
+"applyStats":false,
+"disable":false,
+},
+{//2
+"prefixID":"enSock02",
+"eqptModulesID":1,
+"playerinventoryID":1,
+"selected":false,
+"item":{},
+"CDEnd":0,
+"CDTemp":0,
+"applyStats":false,
+"disable":false,
+},
+{//3
+"prefixID":"enSock03",
+"eqptModulesID":1,
+"playerinventoryID":1,
+"selected":false,
+"item":{},
+"CDEnd":0,
+"CDTemp":0,
+"applyStats":false,
+"disable":false,
+},
+{//4
+"prefixID":"enSock04",
+"eqptModulesID":1,
+"playerinventoryID":1,
+"selected":false,
+"item":{},
+"CDEnd":0,
+"CDTemp":0,
+"applyStats":false,
+"disable":false,
+},
+{//5
+"prefixID":"enSock05",
+"eqptModulesID":1,
+"playerinventoryID":1,
+"selected":false,
+"item":{},
+"CDEnd":0,
+"CDTemp":0,
+"applyStats":false,
+"disable":false,
+},
+{//6
+"prefixID":"enSock06",
+"eqptModulesID":1,
+"playerinventoryID":1,
+"selected":false,
+"item":{},
+"CDEnd":0,
+"CDTemp":0,
+"applyStats":false,
+"disable":false,
+},
+{//7
+"prefixID":"enSock07",
+"eqptModulesID":1,
+"playerinventoryID":1,
+"selected":false,
+"item":{},
+"CDEnd":0,
+"CDTemp":0,
+"applyStats":false,
+"disable":false,
+},
+{//8
+"prefixID":"enSock08",
+"eqptModulesID":1,
+"playerinventoryID":1,
+"selected":false,
+"item":{},
+"CDEnd":0,
+"CDTemp":0,
+"applyStats":false,
+"disable":false,
+},
+{//9
+"prefixID":"enSock09",
+"eqptModulesID":1,
+"playerinventoryID":1,
+"selected":false,
+"item":{},
+"CDEnd":0,
+"CDTemp":0,
+"applyStats":false,
+"disable":false,
+},
+]

@@ -1,0 +1,23 @@
+'use strict'
+
+module.exports = {
+	"name":"EnemyBastard",
+	"LVL":6,
+	"SPMAX":3321,
+	"SPMIN":0,
+	"SPCUR":300,
+	"APMAX":3150,
+	"APMIN":0,
+	"APCUR":2500,
+	"EPMAX":3000,
+	"EPMIN":0,
+	"EPCUR":2500,
+	"PPMAX":332,
+	"PPCUR":0,
+	"PPMIN":0,
+	"TPMAX":990,
+	"TPMIN":-340,
+	"TPCUR":-250,
+	"APRES":10,
+	"SPRES":10,
+}

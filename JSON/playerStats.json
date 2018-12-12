@@ -1,0 +1,23 @@
+'use strict'
+
+module.exports = {
+	"name":"PlayerGoodGuy",
+	"LVL":5,
+	"SPMAX":2532,
+	"SPMIN":0,
+	"SPCUR":2312,
+	"APMAX":2756,
+	"APMIN":0,
+	"APCUR":2756,
+	"EPMAX":1500,
+	"EPMIN":0,
+	"EPCUR":750,
+	"PPMAX":324,
+	"PPCUR":0,
+	"PPMIN":0,
+	"TPMAX":990,
+	"TPMIN":-340,
+	"TPCUR":340,
+	"APRES":50,
+	"SPRES":65,
+}

@@ -1,0 +1,16 @@
+'use strict'
+
+module.exports = [
+
+{//default ratio indicators HUD
+"name":"size 100%",
+"WidthtoHeightHUD":0.328571,
+"height":115,
+"width":350,
+"text16":16,
+"text20":20,
+"text25":25,
+"text30":40,
+"text50":50,
+},
+]

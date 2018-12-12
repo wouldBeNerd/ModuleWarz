@@ -1,0 +1,494 @@
+<html>
+	<title>RBGRPG</title>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS/main.css">
+	<link rel="stylesheet" href="CSS/playerHUD.css">
+	<link rel="stylesheet" href="CSS/enemyHUD.css">
+	<link rel="stylesheet" href="CSS/playerSOCKS.css">
+	<link rel="stylesheet" href="CSS/enemySOCKS.css">
+	<link rel="stylesheet" href="CSS/playerINV.css">
+</head>
+<body>
+
+<div class="Main Menu">
+<!-- KEEPING ALL GAME CLASSES PRESENT WILL COVER UP WITH MAIN MENU WHEN NEEDED AND MOST OF THE GAME WILL LOAD BEFORE THE GAME EVEN STARTS -->
+</div>
+
+
+
+<div class="player">
+	<div ID="playerHUD" class="HUD">
+		<div class="backBarOuter">
+			<div class="backBar"></div>
+		</div>	
+		<div class="shield">
+			<div ID="plShieldMbar" class="movingBar shieldBlue semiTransparent"></div>
+			<div ID="plShieldTxt" class="text text25">0000/0000</div>
+			<div ID="plShieldBord"class="border borderWhite"></div>
+			<img src="ASSETS/a_shieldSmall.svg" class="iconHUD image"></img>
+		</div>
+		<div class="armor">
+			<div ID="plArmorMbar" class="movingBar armorRed semiTransparent"></div>
+			<div ID="plArmorTxt" class="text text25">0000/0000</div>
+			<div ID="plArmorBord" class="border borderWhite"></div>	
+			<img src="ASSETS/a_armorSmall.svg" class="iconHUD image"></img>
+		</div>
+		<div class="battery">
+			<div ID="plBatteryMbar" class="movingBar batteryYellow semiTransparent"></div>
+			<div ID="plBatteryTxt" class="text text25">0000/0000</div>
+			<div ID="plBatteryBord" class="border borderWhite"></div>	
+			<img src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+		</div>
+		<div class="processor">
+			<div ID="plProcessorMbar" class="movingBar processorGreen borderGreen borderTopGreen semiTransparent"></div>
+			<div ID="plProcessorTxtGhz" class="text text16 gigahertz">3.695</div>
+			<div ID="plProcessorTxtGhzS" class="text text20">GHz</div>
+			<div ID="plProcessorMbarPerc" class="text text30 percentage">100%</div>
+			<div ID="plProcessorBord" class="border borderWhite"></div>	
+			<img src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+		</div>
+		<div class="temperature">
+			<div ID="plTemperatureTxtS" class="text text20">°C</div>
+			<div ID="plTemperatureTxt" class="text text50 degrees">-99</div>
+			<div class="movingBorder"></div>	
+			<img src="ASSETS/a_temperatureSmall.svg" class="iconHUD image"></img>
+		</div>	
+	</div>
+	<div ID="playerSocks" class="SOCKS">
+		<div ID="plSock01" class="sock01">
+			<div ID="plSock01backBar" class="backBar"></div>
+			<div ID="plSock01Mbar" class="movingBar sockBlue semiTransparent"></div>
+			<img ID="plSock01Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+			<div ID="plSock01Bord" class="border borderwhite"></div>
+			<img ID="plSock01Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			<div ID="plSock01Button" class="sockButton"></div>
+		</div>
+		<div ID="plSock02" class="sock02">
+			<div ID="plSock02backBar" class="backBar"></div>
+			<div ID="plSock02Mbar" class="movingBar sockBlue semiTransparent"></div>
+			<img ID="plSock02Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+			<div ID="plSock02Bord" class="border borderwhite"></div>
+			<img ID="plSock02Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			<div ID="plSock02Button" class="sockButton"></div>
+		</div>
+		<div ID="plSock03" class="sock03">
+			<div ID="plSock03backBar" class="backBar"></div>
+			<div ID="plSock03Mbar" class="movingBar sockBlue semiTransparent"></div>
+			<img ID="plSock03Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+			<div ID="plSock03Bord" class="border borderwhite"></div>
+			<img ID="plSock03Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			<div ID="plSock03Button" class="sockButton"></div>
+		</div>
+		<div ID="plSock04" class="sock04">
+			<div ID="plSock04backBar" class="backBar"></div>
+			<div ID="plSock04Mbar" class="movingBar sockBlue semiTransparent"></div>
+			<img ID="plSock04Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+			<div ID="plSock04Bord" class="border borderwhite"></div>
+			<img ID="plSock04Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			<div ID="plSock04Button" class="sockButton"></div>
+		</div>
+		<div ID="plSock05" class="sock05">
+			<div ID="plSock05backBar" class="backBar"></div>
+			<div ID="plSock05Mbar" class="movingBar sockBlue semiTransparent"></div>
+			<img ID="plSock05Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+			<div ID="plSock05Bord" class="border borderwhite"></div>
+			<img ID="plSock05Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			<div ID="plSock05Button" class="sockButton"></div>
+		</div>
+		<div ID="plSock06" class="sock06">
+			<div ID="plSock06backBar" class="backBar"></div>
+			<div ID="plSock06Mbar" class="movingBar sockBlue semiTransparent"></div>
+			<img ID="plSock06Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+			<div ID="plSock06Bord" class="border borderwhite"></div>
+			<img ID="plSock06Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			<div ID="plSock06Button" class="sockButton"></div>
+		</div>
+		<div ID="plSock07" class="sock07">
+			<div ID="plSock07backBar" class="backBar"></div>
+			<div ID="plSock07Mbar" class="movingBar sockBlue semiTransparent"></div>
+			<img ID="plSock07Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+			<div ID="plSock07Bord" class="border borderwhite"></div>
+			<img ID="plSock07Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			<div ID="plSock07Button" class="sockButton"></div>
+		</div>
+		<div ID="plSock08" class="sock08">
+			<div ID="plSock08backBar" class="backBar"></div>
+			<div ID="plSock08Mbar" class="movingBar sockBlue semiTransparent"></div>
+			<img ID="plSock08Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+			<div ID="plSock08Bord" class="border borderwhite"></div>
+			<img ID="plSock08Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			<div ID="plSock08Button" class="sockButton"></div>
+		</div>
+		<div ID="plSock09" class="sock09">
+			<div ID="plSock09backBar" class="backBar"></div>
+			<div ID="plSock09Mbar" class="movingBar sockBlue semiTransparent"></div>
+			<img ID="plSock09Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+			<div ID="plSock09Bord" class="border borderwhite"></div>
+			<img ID="plSock09Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			<div ID="plSock09Button" class="sockButton"></div>
+		</div>
+	</div>
+	<div ID"INV" class="INV">
+		<div ID="INVControls" class="INVControls">
+			<div ID="plINVControlUp" class="InvUp">
+				<img ID="plInvArrowUp" src="ASSETS/a_arrowUp.svg" class="image"></img>
+			</div>
+			<div ID="plINVControlDown" class="InvDown">
+				<img ID="plInvArrowDown" src="ASSETS/a_arrowDown.svg" class="image"></img>
+			</div>
+			<div ID="plINVControlMid" class="InvMid">
+				<img ID="plInvArrowMid" src="ASSETS/a_arrowMid.svg" class="image"></img>
+			</div>
+		</div>
+		<div ID="INVButtons" class="INVButtons">
+			<div ID="plSinv01" class="inv01">
+				<div ID="plSinv01backBar" class="backBar"></div>
+				<div ID="plSinv01Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<div ID="plSinv01Bord" class="border borderwhite"></div>
+				<img ID="plSinv01Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+
+				<div class="status">
+					<div class="topLeft">
+						<img ID="plSinv01StatTLIcon" src="ASSETS/a_executionTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv01StatTLTxt" class="text">9.9</div>
+					</div>
+					<div class="topRight">
+						<img ID="plSinv01StatTRIcon" src="ASSETS/a_cooldownTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv01StatTRTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomLeft">
+						<img ID="plSinv01StatBLIcon" src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv01StatBLTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomRight">
+						<img ID="plSinv01StatBRIcon" src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv01StatBRTxt" class="text">9.9</div>
+					</div>
+				</div>
+				<div ID="plSinv01Button" class="invButton"></div>
+			</div>	
+
+			<div ID="plSinv02" class="inv02">
+				<div ID="plSinv02backBar" class="backBar"></div>
+				<div ID="plSinv02Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<div ID="plSinv02Bord" class="border borderwhite"></div>
+				<img ID="plSinv02Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+				<div class="status">
+					<div class="topLeft">
+						<img ID="plSinv02StatTLIcon" src="ASSETS/a_executionTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv02StatTLTxt" class="text">9.9</div>
+					</div>
+					<div class="topRight">
+						<img ID="plSinv02StatTRIcon" src="ASSETS/a_cooldownTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv02StatTRTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomLeft">
+						<img ID="plSinv02StatBLIcon" src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv02StatBLTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomRight">
+						<img ID="plSinv02StatBRIcon" src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv02StatBRTxt" class="text">9.9</div>
+					</div>
+				</div>
+				<div ID="plSinv02Button" class="invButton"></div>
+			</div>	
+
+			<div ID="plSinv03" class="inv03">
+				<div ID="plSinv03backBar" class="backBar"></div>
+				<div ID="plSinv03Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<div ID="plSinv03Bord" class="border borderwhite"></div>
+				<img ID="plSinv03Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+				<div class="status">
+					<div class="topLeft">
+						<img ID="plSinv03StatTLIcon" src="ASSETS/a_executionTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv03StatTLTxt" class="text">9.9</div>
+					</div>
+					<div class="topRight">
+						<img ID="plSinv03StatTRIcon" src="ASSETS/a_cooldownTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv03StatTRTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomLeft">
+						<img ID="plSinv03StatBLIcon" src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv03StatBLTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomRight">
+						<img ID="plSinv03StatBRIcon" src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv03StatBRTxt" class="text">9.9</div>
+					</div>
+				</div>
+				<div ID="plSinv03Button" class="invButton"></div>
+			</div>	
+
+
+			<div ID="plSinv04" class="inv04">
+				<div ID="plSinv04backBar" class="backBar"></div>
+				<div ID="plSinv04Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<div ID="plSinv04Bord" class="border borderwhite"></div>
+				<img ID="plSinv04Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+				<div class="status">
+					<div class="topLeft">
+						<img ID="plSinv04StatTLIcon" src="ASSETS/a_executionTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv04StatTLTxt" class="text">9.9</div>
+					</div>
+					<div class="topRight">
+						<img ID="plSinv04StatTRIcon" src="ASSETS/a_cooldownTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv04StatTRTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomLeft">
+						<img ID="plSinv04StatBLIcon" src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv04StatBLTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomRight">
+						<img ID="plSinv04StatBRIcon" src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv04StatBRTxt" class="text">9.9</div>
+					</div>
+				</div>
+				<div ID="plSinv04Button" class="invButton"></div>
+			</div>	
+
+
+			<div ID="plSinv05" class="inv05">
+				<div ID="plSinv05backBar" class="backBar"></div>
+				<div ID="plSinv05Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<div ID="plSinv05Bord" class="border borderwhite"></div>
+				<img ID="plSinv05Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+				<div class="status">
+					<div class="topLeft">
+						<img ID="plSinv05StatTLIcon" src="ASSETS/a_executionTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv05StatTLTxt" class="text">9.9</div>
+					</div>
+					<div class="topRight">
+						<img ID="plSinv05StatTRIcon" src="ASSETS/a_cooldownTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv05StatTRTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomLeft">
+						<img ID="plSinv05StatBLIcon" src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv05StatBLTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomRight">
+						<img ID="plSinv05StatBRIcon" src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv05StatBRTxt" class="text">9.9</div>
+					</div>
+				</div>
+				<div ID="plSinv05Button" class="invButton"></div>
+			</div>	
+
+
+			<div ID="plSinv06" class="inv06">
+				<div ID="plSinv06backBar" class="backBar"></div>
+				<div ID="plSinv06Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<div ID="plSinv06Bord" class="border borderwhite"></div>
+				<img ID="plSinv06Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+				<div class="status">
+					<div class="topLeft">
+						<img ID="plSinv06StatTLIcon" src="ASSETS/a_executionTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv06StatTLTxt" class="text">9.9</div>
+					</div>
+					<div class="topRight">
+						<img ID="plSinv06StatTRIcon" src="ASSETS/a_cooldownTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv06StatTRTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomLeft">
+						<img ID="plSinv06StatBLIcon" src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv06StatBLTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomRight">
+						<img ID="plSinv06StatBRIcon" src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv06StatBRTxt" class="text">9.9</div>
+					</div>
+				</div>
+				<div ID="plSinv06Button" class="invButton"></div>
+			</div>	
+
+
+			<div ID="plSinv07" class="inv07">
+				<div ID="plSinv07backBar" class="backBar"></div>
+				<div ID="plSinv07Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<div ID="plSinv07Bord" class="border borderwhite"></div>
+				<img ID="plSinv07Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+				<div class="status">
+					<div class="topLeft">
+						<img ID="plSinv07StatTLIcon" src="ASSETS/a_executionTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv07StatTLTxt" class="text">9.9</div>
+					</div>
+					<div class="topRight">
+						<img ID="plSinv07StatTRIcon" src="ASSETS/a_cooldownTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv07StatTRTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomLeft">
+						<img ID="plSinv07StatBLIcon" src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv07StatBLTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomRight">
+						<img ID="plSinv07StatBRIcon" src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv07StatBRTxt" class="text">9.9</div>
+					</div>
+				</div>
+				<div ID="plSinv07Button" class="invButton"></div>
+			</div>	
+
+
+			<div ID="plSinv08" class="inv08">
+				<div ID="plSinv08backBar" class="backBar"></div>
+				<div ID="plSinv08Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<div ID="plSinv08Bord" class="border borderwhite"></div>
+				<img ID="plSinv08Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+				<div class="status">
+					<div class="topLeft">
+						<img ID="plSinv08StatTLIcon" src="ASSETS/a_executionTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv08StatTLTxt" class="text">9.9</div>
+					</div>
+					<div class="topRight">
+						<img ID="plSinv08StatTRIcon" src="ASSETS/a_cooldownTime.svg" class="iconHUD image"></img>
+						<div ID="plSinv08StatTRTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomLeft">
+						<img ID="plSinv08StatBLIcon" src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv08StatBLTxt" class="text">9.9</div>
+					</div>
+					<div class="bottomRight">
+						<img ID="plSinv08StatBRIcon" src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+						<div ID="plSinv08StatBRTxt" class="text">9.9</div>
+					</div>
+				</div>
+				<div ID="plSinv08Button" class="invButton"></div>
+			</div>	
+		</div>
+
+	</div>
+</div>
+
+
+
+
+<div class="enemy">
+	<div ID="enemyHUD" class="HUD">
+
+		<div class="backBarOuter">
+			<div class="backBar"></div>
+		</div>	
+		<div class="shield">
+			<div ID="enShieldMbar" class="movingBar shieldBlue semiTransparent"></div>
+			<div ID="enShieldTxt" class="text text25">0000/0000</div>
+			<div ID="enShieldBord"class="border borderWhite"></div>
+			<img src="ASSETS/a_shieldSmall.svg" class="iconHUD image"></img>
+		</div>
+		<div class="armor">
+			<div ID="enArmorMbar" class="movingBar armorRed semiTransparent"></div>
+			<div ID="enArmorTxt" class="text text25">0000/0000</div>
+			<div ID="enArmorBord" class="border borderWhite"></div>	
+			<img src="ASSETS/a_armorSmall.svg" class="iconHUD image"></img>
+		</div>
+		<div class="battery">
+			<div ID="enBatteryMbar" class="movingBar batteryYellow semiTransparent"></div>
+			<div ID="enBatteryTxt" class="text text25">0000/0000</div>
+			<div ID="enBatteryBord" class="border borderWhite"></div>	
+			<img src="ASSETS/a_batterySmall.svg" class="iconHUD image"></img>
+		</div>
+		<div class="processor">
+			<div ID="enProcessorMbar" class="movingBar processorGreen borderGreen borderTopGreen semiTransparent"></div>
+			<div ID="enProcessorTxtGhz" class="text text16 gigahertz">3.695</div>
+			<div ID="enProcessorTxtGhzS" class="text text20">GHz</div>
+			<div ID="enProcessorMbarPerc" class="text text30 percentage">100%</div>
+			<div ID="enProcessorBord" class="border borderWhite"></div>	
+			<img src="ASSETS/a_processorSmall.svg" class="iconHUD image"></img>
+		</div>
+		<div class="temperature">
+			<div ID="enTemperatureTxtS" class="text text20">°C</div>
+			<div ID="enTemperatureTxt" class="text text50 degrees">-99</div>
+			<div class="movingBorder"></div>	
+			<img src="ASSETS/a_temperatureSmall.svg" class="iconHUD image"></img>
+		</div>	
+	</div>
+	<div ID="enemySOCKS" class="SOCKS">
+			<div ID="enSock01" class="sock01">
+				<div ID="enSock01backBar" class="backBar"></div>
+				<div ID="enSock01Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<img ID="enSock01Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+				<div ID="enSock01Bord" class="border borderwhite"></div>
+				<img ID="enSock01Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			</div>
+			<div ID="enSock02" class="sock02">
+				<div ID="enSock02backBar" class="backBar"></div>
+				<div ID="enSock02Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<img ID="enSock02Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+				<div ID="enSock02Bord" class="border borderwhite"></div>
+				<img ID="enSock02Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			</div>
+			<div ID="enSock03" class="sock03">
+				<div ID="enSock03backBar" class="backBar"></div>
+				<div ID="enSock03Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<img ID="enSock03Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+				<div ID="enSock03Bord" class="border borderwhite"></div>
+				<img ID="enSock03Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			</div>
+			<div ID="enSock04" class="sock04">
+				<div ID="enSock04backBar" class="backBar"></div>
+				<div ID="enSock04Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<img ID="enSock04Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+				<div ID="enSock04Bord" class="border borderwhite"></div>
+				<img ID="enSock04Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			</div>
+			<div ID="enSock05" class="sock05">
+				<div ID="enSock05backBar" class="backBar"></div>
+				<div ID="enSock05Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<img ID="enSock05Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+				<div ID="enSock05Bord" class="border borderwhite"></div>
+				<img ID="enSock05Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			</div>
+			<div ID="enSock06" class="sock06">
+				<div ID="enSock06backBar" class="backBar"></div>
+				<div ID="enSock06Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<img ID="enSock06Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+				<div ID="enSock06Bord" class="border borderwhite"></div>
+				<img ID="enSock06Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			</div>
+			<div ID="enSock07" class="sock07">
+				<div ID="enSock07backBar" class="backBar"></div>
+				<div ID="enSock07Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<img ID="enSock07Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+				<div ID="enSock07Bord" class="border borderwhite"></div>
+				<img ID="enSock07Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			</div>
+			<div ID="enSock08" class="sock08">
+				<div ID="enSock08backBar" class="backBar"></div>
+				<div ID="enSock08Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<img ID="enSock08Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+				<div ID="enSock08Bord" class="border borderwhite"></div>
+				<img ID="enSock08Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			</div>
+			<div ID="enSock09" class="sock09">
+				<div ID="enSock09backBar" class="backBar"></div>
+				<div ID="enSock09Mbar" class="movingBar sockBlue semiTransparent"></div>
+				<img ID="enSock09Status" src="ASSETS/a_offline.svg" class="sockStatus image"></img>
+				<div ID="enSock09Bord" class="border borderwhite"></div>
+				<img ID="enSock09Icon" src="ASSETS/a_nanobotBluePositive.svg" class="iconSOCK image"></img>
+			</div>
+
+	</div>
+	<div class="INV">
+	</div>
+
+</div>
+<!--<input ID="name" type="text" value="mattias"></input>-->
+
+
+<div id="HUDPlayerUnderlay" class="backRect"></div>
+
+	<script type="text/javascript" src="JS/indexCode.js"></script>
+	<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
+
+<!--
+
+<svg width="82" height="82">
+    <g transform="scale(0.8)">
+        <rect x="1" y="1" width="100" height="100" stroke="black" stroke-width="2" fill="white"/>
+        <text fill="black" x="10" y="30">FooBarBaz</text>
+    </g>
+</svg>
+
+-->

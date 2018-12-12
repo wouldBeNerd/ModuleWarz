@@ -1,0 +1,24 @@
+'use strict'
+
+
+module.exports = {
+"CDorAO":"Cooldown or Always On",
+"SPPL":"Player Shield Points",
+"APPL":"Player Armor Points",
+"PPPL":"Player Processor Points",
+"EPPL":"Player Energy Points",
+"CDPL":"Player CoolDown of Equiped Module",
+"TPPL":"Player Temperature Points",
+"DTPL":"Player DownTime of Equiped Module",
+"DTLOCKPL":"Player downTime of Locked Socket",
+"SPEN":"Enemy Shield Points",
+"APEN":"Enemy Armor Points",
+"TPEN":"Enemy Temperature Points",
+"DTEN":"Enemy DownTime of Equiped Module",
+"SPEXP":"Shield Points Expansion",
+"APEXP":"Armor Points Expansion",
+"PPEXP":"Processor Points Expansion",
+"EPEXP":"Energy Points Expansion",
+"CAT":"Category of Module",
+"EPERSEC":"Effect Per Second of Module",
+}

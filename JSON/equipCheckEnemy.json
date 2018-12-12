@@ -1,0 +1,13 @@
+'use strict'
+
+module.exports = {
+"invBool":false,
+"sockBool":false,
+"invToVisualBegin":0,
+"invToVisualEnd":8,
+"scrollForw":false,
+"scrollBackw":false,
+"scrollMid":false,
+"inventoryCount":0,
+"CATS":[],
+}
